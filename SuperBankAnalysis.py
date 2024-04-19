@@ -188,7 +188,7 @@ if txn_file is not None and txn_file:
         chart_df
     st.write(f"""Insights:""")
     st.write(f"""- Customer **:green[Age Group [23-34]]** which is top 1 number of customers has average **:green[balance {int(chart_df1[chart_df1['age_group'].isin(['[23-34]'])]['avg_balance'].values[0]):,}]**
-    - Customer **:green[Age Group [35-55]]** which is top 2 number of customers has average **:green[balance {int(chart_df1[chart_df1['age_group'].isin(['[35-55]'])]['avg_balance'].values[0]):,}]** and average **:green[transaction size {int(chart_df[chart_df['age_group'].isin(['[35-55]'])]['avg_transaction_size'].values[0]):,}]**""")
+- Customer **:green[Age Group [35-55]]** which is top 2 number of customers has average **:green[balance {int(chart_df1[chart_df1['age_group'].isin(['[35-55]'])]['avg_balance'].values[0]):,}]** and average **:green[transaction size {int(chart_df[chart_df['age_group'].isin(['[35-55]'])]['avg_transaction_size'].values[0]):,}]**""")
     st.write(f"""Recommends:""")
     st.write(f"""- **:green[Encourage]** Customer Age Group **:green[[23-34] higher their balance]** with average **:green[transaction size {int(chart_df[chart_df['age_group'].isin(['[23-34]'])]['avg_transaction_size'].values[0]):,}]** by campaigns (ex: automatically electric and water bill payment, school/course payment, discount annual account service fee, beautiful card number/account number discount, Term Deposit promotion if maintain average balance, Bank at work (salary account), etc.)""")
     st.write(f"""- **:green[Increase #Customers]** in Age Group **:green[[35-55]]** to achieve more total balance amount from this good average balance.""")
@@ -217,10 +217,10 @@ if txn_file is not None and txn_file:
     fig10.update_xaxes(categoryorder='array', categoryarray= ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'])
     st.write(fig10)
     st.write(f"""Insights:
-    - **:green[Wednesday, Thursday, Friday]** are **:green[top 3]** day have **:green[high total balance]**
-    - **:green[Sunday]** has **:green[negative total balance]**""")
+- **:green[Wednesday, Thursday, Friday]** are **:green[top 3]** day have **:green[high total balance]**
+- **:green[Sunday]** has **:green[negative total balance]**""")
     st.write(f"""Recommends:
-    - Encourage Customers make transactions more in Wednesday, Thursday, Friday and not execute campaigns in Sunday""")  
+- Encourage Customers make transactions more in Wednesday, Thursday, Friday and not execute campaigns in Sunday""")  
 
     st.markdown("##### Total Transaction amount per from Jan 2021 - March 2021")
     fig_col11, fig_colX = st.columns(2)
