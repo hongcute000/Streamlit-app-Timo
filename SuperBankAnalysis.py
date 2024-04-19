@@ -132,8 +132,8 @@ txnsize = pd.merge(txnsize_, txnsize_mapping, how='left', on='account_id')
 
 st.markdown("### 2.1. Demographic Information")
 
-col1, col2 = st.columns(2)
-name_selection = col1.multiselect('Select Transaction Type Code: ', sorted(txn.txn_type_code.unique().tolist()), key='txn_type_code')
+# col1, col2 = st.columns(2)
+# name_selection = col1.multiselect('Select Transaction Type Code: ', sorted(txn.txn_type_code.unique().tolist()), key='txn_type_code')
 
 
 st.markdown("##### Customers Age Group (from Transactions)")
